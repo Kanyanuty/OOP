@@ -16,19 +16,22 @@ public class Lab5_2 {
         number2 = Double.parseDouble( s2 );
         number3 = Double.parseDouble( s3 );
 
-        double max = maximum( number1, number2, number3 );
-        double min = minimum( number1, number2, number3 );
+        Lab5_2 findminmax = new Lab5_2();
+        double max = findminmax.maximum( number1, number2, number3 );
+        double min = findminmax.minimum( number1, number2, number3 );
+        //double max = maximum( number1, number2, number3 );
+        //double min = minimum( number1, number2, number3 );
         output = "number1: " + number1 + "\nnumber2: " + number2 ;
         output += "\nnumber3: " + number3 + "\nmaximum is: " + max;
         output += "\nminimum is: " + min;
         JOptionPane.showMessageDialog( null, output);
         System.exit(0);
     }
-    public static double maximum( double x, double y, double z )
+    public double maximum( double x, double y, double z )
     {
         return Math.max( x, Math.max( y, z ) );
     } // end method maximum
-    public static double minimum( double x, double y, double z )
+    public double minimum( double x, double y, double z )
     {
         return Math.min( x, Math.min( y, z ) );
     } // end method minimum
