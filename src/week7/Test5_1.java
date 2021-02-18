@@ -10,9 +10,9 @@ public class Test5_1 {
         num = Integer.parseInt(s1);
         int score = getScore(num);
         float average = average(num,score);
-        
+
         String output = "Average scoer is " + average ;
-        JOptionPane.showMessageDialog( null, output,"average", JOptionPane.INFORMATION_MESSAGE );
+        JOptionPane.showMessageDialog( null, output,"Result", JOptionPane.INFORMATION_MESSAGE );
         System.exit(0);
     }
     public static int getScore(int n) {
