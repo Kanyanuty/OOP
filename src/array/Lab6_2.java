@@ -16,15 +16,36 @@ public class Lab6_2 {
         output += "Average value is " + getAverage(score) + "\n";
         JOptionPane.showMessageDialog( null, output ,"Display Score in Array", JOptionPane.INFORMATION_MESSAGE );
     }
-    public static int getMin(int data[]) {
-        return (0);
+    //find Minimum value
+    public static int getMin(int score[]) {
+        int minValue = score[0]; 
+        for(int i=1;i<score.length;i++){ 
+            if(score[i] < minValue){ 
+                minValue = score[i]; 
+            } 
+        } 
+        return minValue; 
     }
-    public static int getMax(int data[]) {
-        return (0);
+    //find Maximum value
+    public static int getMax(int score[]) {
+        int maxValue = score[0];
+        for(int i = 1 ;i <score.length;i++){
+            if(score[i]>maxValue){
+                maxValue = score[i];
+            }
+        }
+        return maxValue;
     }
-    public static int getAverage(int data[]) {
-        return (0);
+    //find Average 10 value
+    public static int getAverage(int score[]) {
+        int sum = 0,average = 0;
+        for(int i=0;i<10;i++){
+            sum += score[i];
+        }
+        average = sum/10;
+        return average ;
     }
+    //Random 10 Value
     public static int rnd(int st, int ed) {
         int offset = ed - st +1;
         return (st + (int) (Math.random() * offset));
