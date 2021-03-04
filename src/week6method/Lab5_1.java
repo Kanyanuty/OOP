@@ -7,7 +7,7 @@ public class Lab5_1 {
         double value;
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter floating number : ");
+        System.out.print("Enter floating number : ");
         value = scan.nextDouble();
         System.out.println("\nCeiling of " +value+ " is " + Math.ceil(value));
         System.out.println("Floor of " + value + " is " + Math.floor(value));
