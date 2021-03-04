@@ -1,5 +1,6 @@
 package array;
 
+import javax.swing.JOptionPane;
 public class Lab6_4_2 {
     public static void main(String[] args) {
         int data[][];
@@ -16,12 +17,15 @@ public class Lab6_4_2 {
             data[i][j] = rnd(10,20);
     }
     public static void displayData(int data[][]){
+        String Play = " ";
         for(int i = 0 ; i < data.length ; i++){
-            for(int j = 0 ; j < data[i].length ; j++)
-                System.out.print( data[i][j] + " ");
-            System.out.println();
+            for(int j = 0 ; j < data[i].length ; j++){
+                Play += data[i][j] + " ";
             }
+            Play += "\n";    
         }
+        JOptionPane.showMessageDialog(null,Play,"Display data", JOptionPane.INFORMATION_MESSAGE);
+    }
     public static int rnd(int st, int ed){
         int offset = ed - st +1;
         return (st + (int) (Math.random() * offset));
