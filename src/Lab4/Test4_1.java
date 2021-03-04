@@ -21,7 +21,6 @@ public class Test4_1 {
                 if(divide % PER_LINE == 0)
                     System.out.println();
             }
-            
         }
     }
 }
