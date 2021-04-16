@@ -1,4 +1,3 @@
-package ass;
 
 /* Id   :   63-060216-2109-0
  * Name :   Oranong Boonpipat
