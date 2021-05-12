@@ -1,3 +1,4 @@
+package Lab8;
 /* Number.java */
 class Number {
     private int number;

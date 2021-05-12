@@ -1,4 +1,4 @@
-
+package Lab8;
 // File Name : Lab8_2.java
 import java.awt.*;
 import java.awt.event.*;

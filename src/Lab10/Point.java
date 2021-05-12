@@ -1,3 +1,4 @@
+package Lab10;
 public class Point {
     private int x = 10; // x part of coordinate pair
     private int y = 10; // y part of coordinate pair
