@@ -1,3 +1,4 @@
+package Lab13;
 import java.awt.*;
 import javax.swing.*;
 
